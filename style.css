@@ -10,11 +10,13 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(243, 243, 243);
+  background-color: #fafafa;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .instagram-wrapper {
   display: flex;
@@ -22,6 +24,7 @@ body {
   justify-content: start;
   width: 60%;
   height: 100vh;
+  padding-bottom: 32px;
 }
 .instagram-phone {
   display: flex;
@@ -56,29 +59,35 @@ body {
 .instagram-logo {
   height: 3rem;
 }
-.profile-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.profile-photo img {
+.profile-image {
   width: 90px;
   height: 90px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 .instagram-login {
   background-color: #0095f6;
   color: #fff;
   padding: 8px;
   border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 4px 2px 14px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: all 0.1s ease-in;
 }
+
+.instagram-login:active {
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transform: translateX(2px);
+}
+
 .instagram-logou {
   color: #0095f6;
   margin-top: 1rem;
 }
 .not-account {
-  color: rgb(160, 160, 160);
+  color: #8e8e8e;
 }
 .link-blue {
   color: #0095f6;
@@ -113,26 +122,34 @@ body {
 .footer {
   display: flex;
   width: 60px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: end;
-  white-space: nowrap;
-  align-self: end;
-  justify-content: end;
-  align-items: center;
-  margin-top: 150px;
-}
-.footer a {
-  color: rgb(160, 160, 160);
-}
-.footer > nav {
-  white-space: normal;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: 5px;
+  position: relative;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+}
+.footer a {
+  color: #8e8e8e;
+  white-space: nowrap;
+}
+.footer > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   padding: 15px;
+  flex-wrap: wrap;
+}
+.copy {
+  color: #8e8e8e;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 52px;
 }
 @media (max-width: 1024px) {
   .instagram-wrapper {
