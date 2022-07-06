@@ -15,4 +15,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 você pode acessar a interface atraves da imagem abaixo ⬇⬇
 
-[![miniatura do app](<https://github.com/PamLeles/instagram/blob/main/img/Captura%20de%20Tela%20(308).png>)](instagram-pamleles.vercel.app)
+[![miniatura do app](<https://github.com/PamLeles/instagram/blob/main/img/Captura%20de%20Tela%20(308).png>)](https://instagram-two-sigma.vercel.app/)
