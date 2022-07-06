@@ -2,6 +2,7 @@
 
 - Esse é o repositório da aula de Flexbox, na qual recriei a interface de login do Instagram!
 - Projeto criando durante o BootCamp para Impulso em conjunto com a Digital Innovation One.
+- Feito deploy para uma melhor visualização e o site está responsivo para telas mobile e tablet.
 
 ## 🚀 Tecnologias
 
